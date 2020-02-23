@@ -1,0 +1,139 @@
+#navDinamicbtn {
+    border: 0;
+    background-color: white;
+    display: block;
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+#logo {
+    display: block;
+    width: 100px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #f8f8f8;
+    font-size: 17px;
+    border: 1px darkgray solid;
+    cursor: pointer;
+    width: 65px;
+    position: absolute;
+}
+
+.search-container input {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    width: 500px;
+    border: 1px darkgray solid;
+    border-right: none;
+}
+
+.search-container {
+    position: relative;
+    float: left;
+    left: 200px;
+}
+
+.fa-search {
+    color: #3d3d3d;
+}
+
+.navbtn {
+    border: none;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#userPic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#floatR {
+    float: right;
+}
+
+.vertical-menu {
+    width: 70px;
+}
+
+.vertical-menu a {
+    background-color: #fff;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    height: 50px;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.active {
+    color: red;
+}
+
+#Sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: auto;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#Sidenav a {
+    text-decoration: none;
+    padding: 8px;
+    font-size: 15px;
+    display: block;
+    color: grey;
+}
+
+#Sidenav a:hover {
+    color: white;
+}
+
+#closebtn {
+    top: 0;
+    position: absolute;
+    right: 0;
+    background-color: #111;
+    border: 0;
+    cursor: pointer;
+}
+
+.fa-close {
+    color: grey;
+}
+
+.fa-close:hover {
+    color: white;
+}

@@ -7,15 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/js.js"></script>
 </head>
 
 <body>
-<header>
+    <header>
 
-</header>
-<main>
-    
-</main>
+        <button id="navDinamicbtn" onclick="openNav()">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+
+        <img src="images/youtubeLogo.png" alt="logo" id="logo" title="Youtube Home">
+
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search">
+                <button type="submit" title="Search">
+                    <i class="fa fa-search"></i>
+                </button>
+
+            </form>
+        </div>
+        <div id="floatR">
+            <button type="button" title="Create a video or post" class="navbtn">
+                <i class="fa fa-video-camera fa-2x"></i>
+            </button>
+
+            <button class="navbtn">
+                <i class="fa fa-bars fa-2x" title="youtube apps"></i>
+            </button>
+
+            <button class="navbtn">
+                <i class="fa fa-bell fa-2x" title="notification"></i>
+            </button>
+
+            <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+        </div>
+    </header>
+
+
+    <main>
+        <div class="vertical-menu">
+            <a href="#home" class="active">
+                <i class="fa fa-fw fa-home fa-2x"></i>
+                <br><br>
+                Home</a>
+            <a href="#Trending">
+                <i class="fa fa-fw fa-fire fa-2x"></i>
+                <br><br>
+                Trending</a>
+            <a href="#subscribting">
+                <i class="fa fa-fw fa-user fa-2x"></i>
+                <br><br>
+                Subscribting</a>
+            <a href="#library"><i class="fa fa-fw fa-youtube-play fa-2x"></i>
+                 <br><br>
+                 Library</a>
+        </div>
+        <div id="Sidenav">
+            <button onclick="closeNav()" id="closebtn">
+                <i class="fa fa-close fa-2x"></i>
+            </button>
+            <a href="#home" class="active">
+                <i class="fa fa-fw fa-home fa-2x"></i>
+                
+                Home</a>
+            <a href="#Trending">
+                <i class="fa fa-fw fa-fire fa-2x"></i>
+                
+                Trending</a>
+            <a href="#subscribting">
+                <i class="fa fa-fw fa-user fa-2x"></i>
+                
+                Subscribting</a>
+            <a href="#library"><i class="fa fa-fw fa-youtube-play fa-2x"></i>
+                 
+                 Library</a>
+        </div>
+        <section>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            
+        </section>
+    </main>
 </body>
 
 </html>
