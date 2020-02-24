@@ -1,3 +1,9 @@
+header{
+    display: block;
+    height: 70px;
+    width: 100%;
+}
+
 #navDinamicbtn {
     border: 0;
     background-color: white;
@@ -69,8 +75,14 @@
     float: right;
 }
 
+aside {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
 .vertical-menu {
-    width: 70px;
+    float: left;
 }
 
 .vertical-menu a {
@@ -137,3 +149,100 @@
 .fa-close:hover {
     color: white;
 }
+
+.Video {
+    display: block;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+}
+
+main {
+    background-color: rgb(216, 214, 214);
+    margin-left: 100px;
+    display: block;
+    width: 1250px;
+    height: 1000px;
+    transition: 0.5s;
+    position: absolute;
+
+
+}
+#Recommed{
+    width: auto;
+    height: 300px;
+    display: block;
+    margin-top: 50;   
+}
+#Trending{
+    width: auto;
+    height: 200px;
+    display: block;
+    margin-top: 50;
+}
+h1{
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+h4{
+    width: 170px;
+    margin-top: 0;
+}
+.horizontal{
+    
+display: block;
+width: 500px;
+height: 30px;
+}
+.horizontal img, h4 ,button {
+    float: left;
+}
+.horizontal img{
+width: 10px;
+height: 10px;
+}
+.horizontal button{
+    border: 0;
+    background-color:rgb(216, 214, 214) ;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: left;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
