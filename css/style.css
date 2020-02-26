@@ -1,10 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 header{
     display: block;
-    height: 70px;
+    height: 60px;
     width: 100%;
+    padding: 5px;
+   position:relative;
+    
 }
 
-#navDinamicbtn {
+aside {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+main {
+    background-color: rgb(216, 214, 214);
+    margin-left: 80px;
+    display: block;
+    width: 1250px;
+    height: 1000px; 
+    transition: 0.5s;
+    position: absolute;
+    margin-top: 50px;   
+
+}
+h1{
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+h4{
+    width: 170px;
+    margin-top: 0;
+    font:13px arial ;
+}
+.floatR {
+    float: right;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+.active{
+    color: red;
+}
+
+#nav-dynamic-btn {
     border: 0;
     background-color: white;
     display: block;
@@ -62,7 +110,7 @@ header{
     cursor: pointer;
 }
 
-#userPic {
+.userPic {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -71,25 +119,16 @@ header{
     cursor: pointer;
 }
 
-#floatR {
-    float: right;
-}
-
-aside {
-    display: block;
-    width: 100px;
-    height: 100%;
-}
-
 .vertical-menu {
     float: left;
+    margin-top: 50px;
 }
 
 .vertical-menu a {
     background-color: #fff;
     color: black;
     display: block;
-    padding: 12px;
+    padding: 10px;
     text-decoration: none;
     font-size: 10px;
     display: block;
@@ -97,7 +136,6 @@ aside {
     width: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow: auto;
     text-align: center;
 }
 
@@ -105,20 +143,17 @@ aside {
     background-color: #ccc;
 }
 
-.active {
-    color: red;
-}
-
 #Sidenav {
+    overflow: scroll;
     height: 100%;
     width: 0;
     position: absolute;
     top: 0;
     left: 0;
     background-color: #111;
-    overflow: auto;
     transition: 0.5s;
     padding-top: 60px;
+    margin-top: 60px;
 }
 
 #Sidenav a {
@@ -133,14 +168,6 @@ aside {
     color: white;
 }
 
-#closebtn {
-    top: 0;
-    position: absolute;
-    right: 0;
-    background-color: #111;
-    border: 0;
-    cursor: pointer;
-}
 
 .fa-close {
     color: grey;
@@ -153,48 +180,28 @@ aside {
 .Video {
     display: block;
     cursor: pointer;
-    width: 200px;
+    width: calc(25% - 200px);
     height: 100px;
     float: left;
     margin-left: 50px;
-    margin-right: 50px;
+
     margin-bottom: 50px;
 
 }
 
-main {
-    background-color: rgb(216, 214, 214);
-    margin-left: 100px;
-    display: block;
-    width: 1250px;
-    height: 1000px;
-    transition: 0.5s;
-    position: absolute;
 
-
-}
-#Recommed{
-    width: auto;
+#Recommend{
     height: 300px;
+    width: 100%;
     display: block;
-    margin-top: 50;   
+    margin-top: 50px;   
 }
 #Trending{
-    width: auto;
     height: 200px;
     display: block;
-    margin-top: 50;
-}
-h1{
     margin-top: 50px;
-    margin-left: 50px;
+}
 
-}
-h4{
-    width: 170px;
-    margin-top: 0;
-    font:13px arial ;
-}
 .horizontal{
     
 display: block;
@@ -205,13 +212,14 @@ height: 30px;
     float: left;
 }
 .horizontal img{
-width: 10px;
-height: 10px;
+width: 25px;
+height: 25px;
 }
 .horizontal button{
     border: 0;
     background-color:rgb(216, 214, 214) ;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -247,3 +255,7 @@ height: 10px;
     display: block;
 }
 
+main img{
+    display: block;
+    width: 100%;
+}
