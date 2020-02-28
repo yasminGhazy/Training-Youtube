@@ -22,52 +22,52 @@
             <form action="/action_page.php">
                 <input type="text" placeholder="Search">
                 <button type="submit" title="Search">
-                    <i class="fa fa-search"></i>
+                    <i class="fa fa-search color"></i>
                 </button>
 
             </form>
         </div>
         <div class="floatR">
             <button type="button" title="Create a video or post" class="navbtn">
-                <i class="fa fa-video-camera fa-2x"></i>
+                <i class="fa fa-video-camera fa-2x color"></i>
             </button>
 
             <button class="navbtn">
-                <i class="fa fa-bars fa-2x" title="youtube apps"></i>
+                <i class="fa fa-bars fa-2x color" title="youtube apps"></i>
             </button>
 
             <button class="navbtn">
-                <i class="fa fa-bell fa-2x" title="notification"></i>
+                <i class="fa fa-bell fa-2x color" title="notification"></i>
             </button>
 
             <img src="images/olaf.jpeg" alt="user photo" class="userPic">
         </div>
     </header>
 
-
+<div id="wrapper">
     <aside>
 
-        <div class="vertical-menu sticky">
-            <a href="#home" >
-                <i class="fa fa-fw fa-home fa-2x active"></i>
+        <div class="vertical-menu ">
+            <a href="#home">
+                <i class="fa fa-fw fa-home fa-2x active color"></i>
                 <br><br>
                 Home</a>
             <a href="#Trending">
-                <i class="fa fa-fw fa-fire fa-2x"></i>
+                <i class="fa fa-fw fa-fire fa-2x color"></i>
                 <br><br>
                 Trending</a>
             <a href="#subscribting">
-                <i class="fa fa-fw fa-user fa-2x"></i>
+                <i class="fa fa-fw fa-user fa-2x color"></i>
                 <br><br>
                 Subscribting</a>
             <a href="#library">
-                <i class="fa fa-fw fa-youtube-play fa-2x"></i>
+                <i class="fa fa-fw fa-youtube-play fa-2x color"></i>
                 <br><br>
                 Library</a>
         </div>
-        <div id="Sidenav">
+        <div id="sidenav">
 
-            <a href="#home"  >
+            <a href="#home">
                 <i class="fa fa-fw fa-home fa-2x active"></i>
 
                 Home</a>
@@ -118,41 +118,56 @@
 
         </div>
     </aside>
+
     <main id="main">
         <section id="Recommend">
             <h1>Recommended</h1>
 
-            <div class="Video">
-                <img src="images/1.PNG" alt="V1" >
+            <div class="video" >
+                <div class="inner-video">
+                    <img src="images/1.PNG" alt="V1"   >
+                    <button type="button"   title="watch later" class="button1">
+                        <i class="fa fa-history color"></i>
+                        <div  value="watch later" class="watch-later-btn">watch later2</div>
+
+                    </button>
+                    <button type="button"  title ="Add to queue" class="button2">
+                        <i class="fa fa-plus color"></i>
+                        <div  value="Add to queue"class="add-to-queue-btn">Add to queue</div>
+
+                    </button>
+
+                </div>
                 <div class="horizontal">
                     <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
 
                     <div class="dropdown">
-                        <button class="navbtn">
-                            <i class="fa fa-ellipsis-v fa-2x"></i>
+                        
+                        <button type="button" class="dropdown-btn" >
+                           <i class="fa fa-ellipsis-v fa-2x color"  ></i>
                         </button>
-
+                  
                         <div class="dropdown-content">
                             <a href="#dropdown">
-                                <i class="fa fa-fw  fa-1x"></i>
+                                <i class="fa fa-fw  fa-1x color"></i>
 
                                 Add to queue</a><br>
                             <a href="#dropdown">
-                                <i class="fa fa-fw  fa-1x"></i>
+                                <i class="fa fa-fw  fa-1x color"></i>
 
                                 save to watch later</a><br>
                             <a href="#dropdown">
-                                <i class="fa fa-ban fa-1x"></i>
+                                <i class="fa fa-ban fa-1x color"></i>
 
                                 Not interseted</a><br>
                             <a href="#dropdown">
-                                <i class="fa fa-thumbs-down fa-1x"></i>
+                                <i class="fa fa-thumbs-down fa-1x color"></i>
 
                                 Don't recommend chanel</a><br>
                             <a href="#dropdown">
-                                <i class="fa fa-bell  fa-1x"></i>
+                                <i class="fa fa-bell  fa-1x color"></i>
 
                                 report</a>
                         </div>
@@ -161,36 +176,36 @@
                 </div>
 
             </div>
-            <div class="Video">
+            <div class="video">
                 <img src="images/2.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
-            <div class="Video">
+            <div class="video">
                 <img src="images/3.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
-            <div class="Video">
+            <div class="video">
                 <img src="images/4.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
@@ -201,47 +216,47 @@
 
         <section ID="Trending">
             <h1>Trending</h1>
-            <div class="Video">
+            <div class="video">
                 <img src="images/5.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
-            <div class="Video">
+            <div class="video">
                 <img src="images/6.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
-            <div class="Video">
+            <div class="video">
                 <img src="images/7.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
-            <div class="Video">
+            <div class="video">
                 <img src="images/8.PNG" alt="V1">
                 <div class="horizontal">
-                    <img src="images/olaf.jpeg" alt="user photo" id="userPic">
+                    <img src="images/olaf.jpeg" alt="user photo" class="userPic">
                     <h4>Learn Css in Arabic #14 - Dimensions - Width / Height
                     </h4>
-                    <button class="navbtn">
-                        <i class="fa fa-ellipsis-v fa-2x"></i>
+                    <button>
+                        <i class="fa fa-ellipsis-v fa-2x color"></i>
                     </button>
                 </div>
             </div>
@@ -249,7 +264,9 @@
 
 
         </section>
+
     </main>
+</div>
     <script src="js/js.js"></script>
 
 </body>
