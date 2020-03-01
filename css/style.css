@@ -91,15 +91,15 @@ main {
 }
 
 .floatR {
-    width: 18%;
+    width: 13%;
     float: right;
 }
 
 .navbtn {
     border: none;
     background-color: white;
-    margin: 10px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .color {
@@ -108,9 +108,10 @@ main {
 
 .userPic {
     width: 30px;
-    height: 30px;
     border-radius: 50%;
     cursor: pointer;
+    float: right;
+    margin-right:10px ;
 }
 
 .vertical-menu {
