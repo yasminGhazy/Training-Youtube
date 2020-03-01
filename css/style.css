@@ -91,7 +91,7 @@ main {
 }
 
 .floatR {
-    width: 13%;
+    width: 14%;
     float: right;
 }
 
@@ -99,7 +99,8 @@ main {
     border: none;
     background-color: white;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
 }
 
 .color {
@@ -111,7 +112,8 @@ main {
     border-radius: 50%;
     cursor: pointer;
     float: right;
-    margin-right:10px ;
+    margin-right:8px ;
+    margin-top: 3px;
 }
 
 .vertical-menu {
