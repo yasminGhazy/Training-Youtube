@@ -1,28 +1,4 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header {
-    display: block;
-    width: 100%;
-    padding: 5px;
-    position: relative;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    z-index: 1;
-}
-aside {
-    float: left;
-    width: 15%;
-    position: fixed;
-    top: 15px;
-    bottom: 0;
-}
 
 
 main {
@@ -38,16 +14,34 @@ main {
 #wrapper {
     overflow: hidden;
 }
-/*
+
 .sticky {
     position: fixed;
     top: 0;
     background-color: white;
     z-index: 1;
-}*/
+}
 
 .active {
     color: red;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:3;
+    cursor: pointer;
+}
+
+#search_mob {
+    display: none;
 }
 
 #nav-dynamic-btn {
@@ -61,50 +55,9 @@ main {
     cursor: pointer;
     color: #606060;
 }
-#overlay {
-  
-  
-
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-  z-index: 2; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s;
-}
-.overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-   width:calc(100% -60px);
-
-  /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  background-color: white;
-}
-#overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px arial;
-    color: #818181;
-    display: block; 
-    transition: 0.3s; 
-}
-#overlay a:hover{
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-
-}
-#search_mob {
-    display: none;
-}
 
 #logo {
-    width:129px; /*  10%;*/
+    width: 129px;
     float: left;
     cursor: pointer;
 }
@@ -136,14 +89,16 @@ main {
     float: left;
     left: 100px;
     transition: 1s;
-
 }
 
 .floatR {
     width: 14%;
     float: right;
     max-width: 180px;
+}
 
+.fa-2x {
+    font-size: 1.6em;
 }
 
 .navbtn {
@@ -154,34 +109,31 @@ main {
     width: calc(25% - 20px);
 }
 
-
 .color {
     color: #606060;
 }
 
 .userPic {
-    width: 30px;
+    width: 100%;
     border-radius: 50%;
-    cursor: pointer;
-    float: right;
-    margin-right:8px ;
-    margin-top: 3px;
 }
+
 .userPic-btn {
     border: 0px;
     background-color: white;
-   
+    width: calc(25% - 6px);
+    cursor: pointer;
+    margin-right: 5px;
     margin-top: 10px;
     float: right;
-   /* width: calc(25% - 6px);
-    cursor: pointer;
-    margin-right: 5px;*/
 }
 
 .vertical-menu {
     float: left;
     margin-top: 50px;
 }
+
+/**/
 
 .vertical-menu a {
     background-color: #fff;
@@ -228,12 +180,11 @@ main {
     width: calc(25% - 10px);
     float: left;
     margin-left: 10px;
-    margin-bottom: 10px;
 }
 
 .inner-video {
     position: relative;
-    /*min-width: 150px;*/
+    min-width: 150px;
     display: block;
 }
 
@@ -307,24 +258,24 @@ main {
 #Trending {
     width: 100%;
     float: left;
-    /*margin-bottom: 70px;*/
-
+    margin-bottom: 70px;
 }
 
 .horizontal {
     display: block;
     width: 100%;
     margin-top: 10px;
-
+    overflow: hidden;
 }
 
 .video-text:hover .user-name {
     color: black;
 }
-.user-name{
-    padding-top: 10px;
 
+.user-name {
+    padding-top: 10px;
 }
+
 .video-text {
     float: left;
     padding-left: 5px;
@@ -334,8 +285,8 @@ main {
 .video-text h4 {
     margin: 0;
     cursor: pointer;
-    float: left;
-    font: 13px ;
+    display: block;
+    font: 13px arial;
 }
 
 .user-view-time {
@@ -349,7 +300,6 @@ main {
     padding: 0;
     cursor: pointer;
 }
-
 .horizontal button {
     border: 0;
     background-color: #f8f8f8;
@@ -362,10 +312,7 @@ main {
 .dropdown {
     position: relative;
     display: inline-block;
-
-    
 }
-
 /* Dropdown Content */
 
 .dropdown-content {
@@ -375,7 +322,6 @@ main {
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    float: left;
 }
 
 /* Links inside the dropdown */
@@ -398,6 +344,7 @@ main {
     display: none;
 }
 
+
 .video:hover .dropdown-btn {
     display: block;
 }
@@ -408,130 +355,44 @@ main img {
 }
 
 
-@media only screen and (max-width: 400px) {
-    .search-container button {
-        display: none;
-    }
-    .search-container input {
-        display: none;
-    }
-    .floatR {
-        width: 35%;
-        max-width: 220px;
-    }
-    .fa-2x {
-        font-size: 1.0em;
-    }
-    #search_mob {
-        display: block;
-        float: right;
-        margin-right: 10px;
-    }
-    #logo {
-        float: left;
-    }
-    .navbtn {
-        display: none;
-    }
-    #nav-dynamic-btn {
-        display: none;
-    }
-    main {
-        margin-left: 0px;
-        width: 100%;
-    }
-    #sidenav {
-        display: none;
-    }
-    .aside {
-        float: none;
-        width: 100%;
-        position: fixed;
-        top: 15px;
-        bottom: 0;
-        overflow: hidden;
-    }
-    .vertical-menu {
-        overflow: hidden;
-        position: fixed;
-        bottom: 0;
-        background-color: white;
-        width: 100%;
-        float: none;
-        margin-top: 0px;
-    }
-    .vertical-menu a {
-        background-color: white;
-        color: black;
-        display: inline-block;
-        padding: 10px;
-        text-decoration: none;
-        font-size: 10px;
-        width: 22%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        text-align: center;
-    }
-    .video {
-        display: block;
-        max-width: 100%;
-        min-width: 100%;
-        float: none;
-        margin-left: 0px;
-        margin-bottom: 20px;
-        overflow: auto;
-    }
 
-    .inner-video {
-        position: static;
-    }
-    .dropdown-btn {
-        display: block;
-    }
-   
-  .dropdown:hover .dropdown-content {
+
+/**/
+.dropdown {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+}
+
+.dropdown-btn :hover #overlay {
+    display: block;
+}
+.dropdown-content {
     display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+/****************/
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-}
+/* Dropdown Content */
 
-@media only screen and (min-width: 401px) and (max-width: 808px) {
-    .search-container button {
-        padding: 6px 10px;
-        margin-top: 8px;
-        margin-right: 16px;
-        background: #f8f8f8;
-        font-size: 17px;
-        border: 1px darkgray solid;
-        cursor: pointer;
-        width: calc(23% - 17px);
-        position: absolute;
-    }
-    .floatR {
-        width: 30%;
-        float: right;
-    }
-    .search-container input {
-        padding: 6px;
-        margin-top: 8px;
-        font-size: 17px;
-        width: 85%;
-        border: 1px darkgray solid;
-        border-right: none;
-        float: left;
-    }
-    .search-container {
-        width: 40%;
-        left: 0px;
-        transition: 1s;
-        position: relative;
-        float: left;
-    }
-    .vertical-menu {
-        display: none;
-    }
-    main {
-        margin-left: 0px;
-        width: 100%;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
